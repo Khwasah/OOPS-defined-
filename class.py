@@ -1,8 +1,7 @@
 '''
 Inheritance: Vehicle → Car, Bike, 
 each with a different fuel_cost().
-Polymorphism: A list of Shape objects(Circle, Rectangle
-, Triangle) and loop calling area().'''
+'''
 
 
 class vehicle:
@@ -11,8 +10,8 @@ class vehicle:
         self.model=model
 class car(vehicle):
     def __init__(self,brand,model,fuel_cost):
-        super().__init__(brand,model)
-        self.fuel_cost=fuel_cost
+        super().__init__(brand,model) #initalizing the parent class/vehicle part
+        self.fuel_cost=fuel_cost #initializing car specific part
     def fuel_cost(self):
         return self.fuel_cost
 brand = input("Enter the car brand: ")
